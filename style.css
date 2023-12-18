@@ -1,0 +1,241 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    line-height: 1.5em;
+    font-family: 'Anek Bangla', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*-----slut css reset*/
+
+
+body {
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #976331;
+    background-color: rgba(114, 66, 22, 0.7);
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+}
+
+.logo {
+    height: auto;
+    width: 2em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-transform: uppercase;
+    padding: 1em;
+    text-align: center;
+    justify-content: space-around;
+}
+
+a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    padding: 0em 1em;
+}
+
+li {
+    font-size: 1.5em;
+    list-style-type: none;
+    margin: 1em;
+    ;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 0.6em;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 0.6em;
+
+}
+
+h3 {
+    color: white;
+    font-size: 1.6em;
+    margin-bottom: 0.6em;
+
+}
+
+p {
+    color: white;
+    font-size: 0.9em;
+}
+
+main {
+    display: flex;
+    align-items: center; 
+    margin: 3em 0; /* Lägg till margin-bottom för att skapa utrymme mellan main och footer */
+}
+
+.welcometext {
+    background-color: #976331;
+    background-color: rgba(114, 66, 22, 0.9);  
+    display: flex;
+    flex-direction: column;
+    margin: 3em auto;
+    width: 80%;
+    text-align: center;
+    padding: 5em;   
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 10em;
+}
+
+.menu {
+    background-color: #976331;
+    background-color: rgba(114, 66, 22, 0.9);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    margin: 3em auto;
+    width: 80%;
+    text-align: center;
+}
+
+#maincontact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 6em;
+    background-color: #976331;
+    background-color: rgba(114, 66, 22, 0.9);
+
+
+}
+
+.contacttext {
+    padding: 2em;
+    text-align: left;
+    border-right: 1px #976331 solid; 
+    width: 30%;
+
+  
+}
+
+.findustext {
+    padding: 2em;
+    text-align: left;  
+
+}
+
+label {
+    color: white;
+    font-size: 0.9em;
+}
+
+input, label,textarea,.submitbutton {
+    margin: 0.5em;
+}
+
+.submitbutton {
+padding: 1em 2em;
+margin-top: 0.7em;
+background-color: #3c2814;
+color: white;
+font-size: 0.9em;
+border:rgba(114, 66, 22, 0.7);
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.booktablesection {
+    padding: 4em;
+    text-align: left;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #976331;
+    background-color: rgba(114, 66, 22, 0.9);
+    width: 50em;
+}
+
+.date-and-weather {
+    display: flex;
+    flex-direction: column;
+    width: 8em;
+
+}
+
+footer {
+    background-color: #976331;
+    background-color: rgba(114, 66, 22, 0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    bottom: 0; 
+    width: 100%;
+    margin-top: 3em; 
+
+}
+.footersection {
+padding: 2em;
+}
+
+#booktable {
+    padding: 1em 2em;
+    width: 10em;
+    font-size: 1.2em;
+    margin: 2em auto;
+    background-color: #3c2814;
+    color: white;
+    border:rgba(114, 66, 22, 0.7);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#booktable:hover, .submitbutton:hover {
+    background-color: #4b3a2a;
+    color: #fff; 
+  }
+
+.weather-icon {
+    width: 50px;   
+    height: 10px; 
+  }
+  
+  .date-and-weather {
+    display: flex;
+    flex-direction: row ;
+    width: 30em;
+    max-height: 10em;
+    gap: 10px;
+
+  }
+
+  .datum {
+ height: 20px;
+
+  }

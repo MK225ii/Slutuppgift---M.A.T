@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<title>Webbprojekt</title>
+<meta charset="UTF-8">
+<link href="../style.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;200;300;400;500;600;700;800&family=Barlow&family=Marck+Script&family=Montserrat:ital,wght@1,100&family=Open+Sans&family=Shrikhand&display=swap" rel="stylesheet">
+<script src="/js/script.js" type="module" ></script>
+</head>
+
+<body>
+
+<header>
+    <img class="logo" src="/img/MAT_logo.svg" alt="MATs logo">
+
+    <nav class="topnav">
+        <a href="../index.html">HEM</a>
+        <a href="/html/meny.html">A LA CARTe</a>
+        <a href="/html/takeaway.html">TAKE AWAY</a>
+        <a href="/html/contact.html">KONTAKT</a>
+        <a href="/html/booking.html">BOKA BORD</a>
+      </nav>
+</header>
+
+<main id="maincontact">
+    <section class="contacttext">
+        <h2>Kontakta oss</h2>
+        <p>info@mat.com</p>
+        <p>070-123 45 67</p>
+        <p>Bråddgatan 9, Norrköping</p><br>
+        <p>Eller hör av dig till oss via formuläret nedan</p>
+        
+      
+        <form action="din_server_skript.php" method="post">
+            <label for="namn">Namn:</label>
+            <br>
+            <input type="text" id="namn" name="namn" required>
+            <br>
+            <label for="epost">E-post:</label>
+            <br>
+            <input type="email" id="epost" name="epost" required>
+            <br>
+            <label for="meddelande">Meddelande:</label>
+            <br>
+            <textarea id="meddelande" name="meddelande" rows="4"></textarea>
+            <br>
+            <input type="submit" class="submitbutton" value="Skicka">
+            
+        </form>
+    </section>
+    <section class="findustext">
+        <h2>Hitta till oss</h2>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2079.1168488211592!2d16.180504077513433!3d58.59355476969691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46593a4a6e5bec77%3A0xc24d3b486bcf9e34!2sBr%C3%A5ddgatan%209%2C%20602%2022%20Norrk%C3%B6ping!5e0!3m2!1sen!2sse!4v1699276653267!5m2!1sen!2sse" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        
+       
+    </section>
+
+</main>
+<footer>
+    <section class="footersection">
+        <h3>Öppettider </h3>
+        <p>Måndag: STÄNGT</p>
+        <p>Tisdag: 16.00-23.00</p>
+        <p>Onsdag: 16.00-23.00</p>
+        <p>Torsdag: 16.00-23.00</p>
+        <p>Fredag: 16.00-01.00</p>
+        <p>Lördag: 17.00 - 01.00</p>
+        <p>Söndag: 17.00 - 01.00</p>
+    </section>
+    <section class="footersection">
+        <h3>Kontakt</h3>
+        <p>
+            info@mat.com <br />
+            +46 (0)70 123 45 67 <br />
+            mat.com<br />
+        </p>
+    </section>
+</footer>
+</body>
+</html>
