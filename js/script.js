@@ -3,23 +3,13 @@ import { getData } from "./info-retriver.js";
 let msgElem = document.getElementsByClassName("weather-forecast");
 const dateToFetch = await getData();
 window.addEventListener("load", init());
-// Display the image
-const imgElement = document.createElement("img");
-imgElement.src = imageUrl;
-imgElement.alt = weatherMain;
-imgElement.classList.add("weather-icon");  // Add the weather-icon class
-
-document.getElementById("weather-icons").innerHTML = ''; // Clear existing content
-document.getElementById("weather-icons").appendChild(imgElement);
-
 
 function init() {
-  console.log("init");
   document.getElementById("datum").addEventListener("change", showWeather);
 }
 
 function showWeather() {
-
+  let imageUrl; // Declare imageUrl here
 
   for (let i = 0; i < dateToFetch.length; i++) {
     if (dateToFetch[i].dt_txt.split(" ")[0] === document.getElementById("datum").value) {
@@ -37,7 +27,7 @@ function showWeather() {
         case "Snow":
           imageNumber = 3;
           break;
-        case "Clear":
+        case "Sun":
           imageNumber = 4;
           break;
         default:
@@ -45,7 +35,7 @@ function showWeather() {
       }
 
       // Get the image URL using the geticon function
-      const imageUrl = geticon(imageNumber);
+      imageUrl = geticon(imageNumber);
 
       // Display the image
       const imgElement = document.createElement("img");
@@ -53,8 +43,6 @@ function showWeather() {
       imgElement.alt = weatherMain;
       document.getElementById("weather-icons").innerHTML = ''; // Clear existing content
       document.getElementById("weather-icons").appendChild(imgElement);
-
-      console.log(weatherMain);
     }
   }
 }

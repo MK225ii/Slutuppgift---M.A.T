@@ -15,7 +15,7 @@
 <body>
 
 <header>
-    <img class="logo" src="/img/MAT_logo.svg" alt="MATs logo">
+    <img class="logo" src="../img/MAT_logo.svg" alt="MATs logo">
 
     <nav class="topnav">
         <a href="../index.html">HEM</a>
@@ -44,10 +44,9 @@
             <div class="date-and-weather">
                 <label for="datum">Önskat datum:</label>
                 <input type="date" id="datum" name="datum">
+                <p>Aktuellt väder vald dag 	&#40; Gäller endast 5 dagar framåt	&#41;</p>
                 <div id="weather-icons" class="weather-forecast">
-                    <label>Väderprognos 5 dagar framåt</label><!-- Här kan du lägga till innehållet för väderprognosen -->
-                    <!-- T.ex. en ikon, temperatur, beskrivning, osv. -->
-                </div>
+                                  </div>
             </div>
             <br>
             <label for="tid">Önskad tid:</label><br>
@@ -56,7 +55,7 @@
             <label for="meddelande">Särskilda önskemål:</label><br>
             <textarea id="meddelande" name="meddelande" rows="4"></textarea>
             <br>
-            <input type="submit" class="submitbutton" value="Boka bord">
+            <input type="submit" id="submit" class="submitbutton" value="Boka bord">
         </form>
     </section>
     
